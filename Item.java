@@ -10,4 +10,16 @@ public class Item {
         this.nettoPrice = nettoPrice;
         this.vat = vat;
     }
+
+    public BigDecimal getNettoPrice() {
+        return nettoPrice;
+    }
+
+    public BigDecimal getVat() {
+        return vat;
+    }
+
+    public BigDecimal getVatAmmount(){
+        return nettoPrice.multiply(vat);
+    }
 }
