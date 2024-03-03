@@ -1,9 +1,11 @@
+import java.math.BigDecimal;
+
 public class Item {
     private String name;
-    private double nettoPrice;
-    private double vat;
+    private BigDecimal nettoPrice;
+    private BigDecimal vat;
 
-    public Item(String name, double nettoPrice, double vat) {
+    public Item(String name, BigDecimal nettoPrice, BigDecimal vat) {
         this.name = name;
         this.nettoPrice = nettoPrice;
         this.vat = vat;
